@@ -57,9 +57,6 @@ Components are the building blocks of a React application. They can be functiona
        }
      }
      ```
-
-...
-
 ### JSX (JavaScript XML)
 
 #### Definition
