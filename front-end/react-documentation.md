@@ -316,6 +316,9 @@ const CounterComponent = () => {
 ## Folder Structure
 
 ```
+/public
+|-- /images
+| |-- image1.png
 /src
 |-- /context
 | |-- AuthContext.tsx
@@ -354,16 +357,13 @@ const CounterComponent = () => {
 |
 |-- App.tsx
 |-- index.js
-|-- /tests
-|-- /public
-|-- /build
 |-- .gitignore
 |-- package.json
-|-- README.md
 |-- .eslintrc.js
 |-- .prettierrc
 |-- webpack.config.js
 |-- babel.config.js
+|-- README.md
 ```
 
 This is not the best structure but just a good baseline
