@@ -661,6 +661,7 @@ export default UserListComponent;
 - `ant design`
 - `material-ui`
 - `mdn websocket`
+- `oidc` (For login in other website)
 
 ## Resources
 
