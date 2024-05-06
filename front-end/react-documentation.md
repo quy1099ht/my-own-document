@@ -78,7 +78,7 @@ const element = <h1>Hello, React!</h1>;
 #### Example
 Preferable way:
 ```tsx
-    const MyComponentType = {
+    type MyComponentType = {
         message: string;
     }
 
