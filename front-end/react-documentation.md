@@ -378,11 +378,13 @@ import Contact from './Contact';
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
@@ -450,22 +452,24 @@ import Unauthorized from './Unauthorized';
 
 const App = () => {
   return (
-    <Routes>
-      <Route element={<RequiredLogin />} >
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-
-        <Route element={<RequiredAdmin />} > 
-          <Route path="/admin" element={<Admin />} />
+    <BrowserRouter>
+      <Routes>
+        <Route element={<RequiredLogin />} >
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+  
+          <Route element={<RequiredAdmin />} > 
+            <Route path="/admin" element={<Admin />} />
+          </Route>
+  
+          <Route path="/unauthorized" element={<Unauthorized />} />
         </Route>
-
-        <Route path="/unauthorized" element={<Unauthorized />} />
-      </Route>
-
-      {/* This route doesn't require login */}
-      <Route path="/about" element={<About />} />
-      <Route path="/login" element={<Login />} />
-    </Routes>
+  
+        {/* This route doesn't require login */}
+        <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
